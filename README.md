@@ -38,6 +38,13 @@
 
 ###
 
+<h3 align="left">Connect with me:</h3>
+<p align="left">
+</p>
+
+<p><img align="center" src="https://github-readme-stats.vercel.app/api/top-langs?username=aagamanmainali35&show_icons=true&locale=en&layout=compact" alt="aagamanmainali35" /></p>
+
+
 <div align="center">
   <img src="https://streak-stats.demolab.com?user=AagamanMainali35&locale=en&mode=daily&theme=dark&hide_border=false&border_radius=5&order=3" height="220" alt="streak graph"  />
 </div>
