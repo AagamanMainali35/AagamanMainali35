@@ -38,30 +38,20 @@
 
 ###
 
-<h3 align="left">Connect with me:</h3>
-<p align="left">
-</p>
-
-<p><img align="center" src="https://github-readme-stats.vercel.app/api/top-langs?username=aagamanmainali35&show_icons=true&locale=en&layout=compact" alt="aagamanmainali35" /></p>
-
-
 <div align="center">
-  <img src="https://streak-stats.demolab.com?user=AagamanMainali35&locale=en&mode=daily&theme=dark&hide_border=false&border_radius=5&order=3" height="220" alt="streak graph"  />
+  <img src="https://github-readme-stats.vercel.app/api?username=AagamanMainali35&hide_title=false&hide_rank=false&show_icons=true&include_all_commits=true&count_private=true&disable_animations=false&theme=dracula&locale=en&hide_border=false&order=1" height="150" alt="stats graph"  />
+  <img src="https://github-readme-stats.vercel.app/api/top-langs?username=AagamanMainali35&locale=en&hide_title=false&layout=compact&card_width=320&langs_count=5&theme=dracula&hide_border=false&order=2" height="150" alt="languages graph"  />
+  <img src="https://github-readme-activity-graph.vercel.app/graph?username=AagamanMainali35&radius=16&theme=react&area=true&order=5" height="300" alt="activity-graph graph"  />
 </div>
 
 ###
-
 ###
-
 <h3 align="center">Contact me on :</h3>
 
-###
-
-<p align="center";">
-    Discord: <a href="https://discord.com/users/861225568439631922" target="_blank">https://discord.com/users/861225568439631922</a><br>
-    LinkedIn: <a href="https://www.linkedin.com/in/aagaman-mainali/" target="_blank">https://www.linkedin.com/in/aagaman-mainali/</a><br>
-    Gmail: <a href="mailto:Aagamanmainali35@gmail.com" style="color: blue;">Aagamanmainali35@gmail.com</a>
-</p>
-
+<p align="center">
+<a href="https://linkedin.com/in/aagaman-mainali" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/linked-in-alt.svg" alt="aagaman-mainali" height="30" width="40" /></a>
+<a href="https://fb.com/aagamanmainali265" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/facebook.svg" alt="aagamanmainali265" height="30" width="40" /></a>
+<a href="https://instagram.com/aagaman_mainali" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/instagram.svg" alt="aagaman_mainali" height="30" width="40" /></a>
+</h3>
 
 ###
