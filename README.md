@@ -49,7 +49,7 @@
   <li><a href="https://github.com/AagamanMainali35/DRF-Ecommerce" target="_blank">E-commerce API built with Django REST Framework</a></li>
   <li><a href="https://github.com/AagamanMainali35/FullStackSchool-Management-System" target="_blank">Full Stack School Management System</a></li>
 </ul>
-<br /><br /><br /><br />
+<br /><br /><br /><br /><br />
 
 
 
@@ -63,12 +63,8 @@
     <img src="https://img.shields.io/badge/Gmail-D14836?style=for-the-badge&logo=gmail&logoColor=white" alt="Gmail" style="margin-bottom: 5px;" />
   </a>
 
-  <a href="https://www.instagram.com/kiran_a_n" target="_blank">
+  <a href="https://www.instagram.com/aagaman_mainali/" target="_blank">
     <img src="https://img.shields.io/badge/Instagram-E4405F?style=for-the-badge&logo=instagram&logoColor=white" alt="Instagram" style="margin-bottom: 5px;" />
-  </a>
-
-  <a href="https://twitter.com/kiran__a__n" target="_blank">
-    <img src="https://img.shields.io/badge/Twitter-1DA1F2?style=for-the-badge&logo=twitter&logoColor=white" alt="Twitter" style="margin-bottom: 5px;" />
   </a>
 </div>
 
