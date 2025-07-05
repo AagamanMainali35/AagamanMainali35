@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<title>3D Globe with Tech Stack Logos</title>
+<style>
+  body {
+    margin: 0;
+    background: #111;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+  }
+  .globe-container {
+    width: 500px;
+    height: 500px;
+    position: relative;
+    perspective: 1200px;
+  }
+  #globe {
+    position: relative;
+    width: 500px;
+    height: 500px;
+    transform-style: preserve-3d;
+  }
+  #globe img {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    margin: -25px 0 0 -25px;
+    user-select: none;
+    transition: opacity 0.3s, filter 0.3s;
+    pointer-events: none;
+  }
+</style>
+</head>
+<body>
+
+<div class="globe-container">
+  <div id="globe"></div>
+</div>
+
+<script>
+  const icons = [
+    "https://skillicons.dev/icons?i=py",
+    "https://img.icons8.com/?size=100&id=qV-JzWYl9dzP&format=png&color=000000",
+    "https://skillicons.dev/icons?i=js",
+    "https://skillicons.dev/icons?i=html",
+    "https://skillicons.dev/icons?i=css",
+    "https://skillicons.dev/icons?i=react",
+    "https://skillicons.dev/icons?i=anaconda",
+    "https://skillicons.dev/icons?i=md",
+    "https://skillicons.dev/icons?i=postgres",
+    "https://skillicons.dev/icons?i=sqlite",
+    "https://skillicons.dev/icons?i=git",
+    "https://img.icons8.com/?size=100&id=62856&format=png&color=ffffff",
+    "https://skillicons.dev/icons?i=vscode",
+    "https://skillicons.dev/icons?i=sublime",
+    "https://skillicons.dev/icons?i=replit",
+    "https://skillicons.dev/icons?i=postman",
+    "https://skillicons.dev/icons?i=figma",
+    "https://skillicons.dev/icons?i=gitlab",
+    "https://skillicons.dev/icons?i=jquery"
+  ];
+
+  const globe = document.getElementById('globe');
+  const radius = 180;
+  const total = icons.length;
+  const centerX = 250;
+  const centerY = 250;
+  const focalLength = 600;
+
+  const points = [];
+
+  for (let i = 0; i < total; i++) {
+    const img = document.createElement('img');
+    img.src = icons[i];
+    globe.appendChild(img);
+
+    // Avoid exact poles for smooth rotation
+    const phi = Math.acos(-1 + (2 * i + 1) / total);
+    const theta = Math.sqrt(total * Math.PI) * phi;
+
+    points.push({ img, phi, theta });
+  }
+
+  let rotationY = 0;
+
+  function animate() {
+    rotationY += 0.003;  // slower rotation
+    if (rotationY > Math.PI * 2) rotationY -= Math.PI * 2;
+
+    points.sort((a, b) => {
+      const az = radius * Math.sin(a.phi) * Math.sin(a.theta + rotationY);
+      const bz = radius * Math.sin(b.phi) * Math.sin(b.theta + rotationY);
+      return bz - az;
+    });
+
+    points.forEach((p, i) => {
+      const x = radius * Math.sin(p.phi) * Math.cos(p.theta + rotationY);
+      const y = radius * Math.cos(p.phi);
+      const z = radius * Math.sin(p.phi) * Math.sin(p.theta + rotationY);
+
+      const scale = focalLength / (focalLength + z);
+      const screenX = centerX + x * scale;
+      const screenY = centerY + y * scale;
+
+      p.img.style.left = `${screenX}px`;
+      p.img.style.top = `${screenY}px`;
+
+      const scaleSize = 0.5 + scale * 0.5;
+      p.img.style.width = `${50 * scaleSize}px`;
+      p.img.style.height = `${50 * scaleSize}px`;
+      p.img.style.marginLeft = `${-25 * scaleSize}px`;
+      p.img.style.marginTop = `${-25 * scaleSize}px`;
+
+      const opacity = 0.3 + 0.7 * scale;
+      p.img.style.opacity = opacity;
+
+      p.img.style.zIndex = Math.floor(scale * 1000);
+
+      // Make GitHub logo brighter (index 11)
+      if (i === 11) {
+        p.img.style.filter = 'brightness(1.5)';
+      } else {
+        p.img.style.filter = 'none';
+      }
+    });
+
+    requestAnimationFrame(animate);
+  }
+
+  animate();
+</script>
+
+</body>
+</html>
