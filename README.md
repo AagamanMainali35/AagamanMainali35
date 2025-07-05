@@ -32,7 +32,7 @@
   
 
 <h2 align="center">Tᴇᴄʜ sᴛᴀᴄᴋ & Lᴀᴛᴇsᴛ ʙʟᴏɢs</h2> 
-<img align="left" alt="Techstack GIF" src="Images/Techstack" width="550" />
+<img align="left" alt="Techstack GIF" src="Images/Techstack.gif" width="550" />
 <br />
 
 <h3 align="left">📚 Current Learning</h3>
