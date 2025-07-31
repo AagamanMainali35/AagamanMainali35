@@ -32,11 +32,8 @@
   
 
 <h2 align="center">Tᴇᴄʜ sᴛᴀᴄᴋ & Lᴀᴛᴇsᴛ ʙʟᴏɢs</h2> 
-<!-- Dark mode image -->
-![Techstack GIF](Images/Techstack.gif#gh-dark-mode-only)
-
-<!-- Light mode image -->
-![Techstack GIF](Images/TechstackWhite.gif#gh-light-mode-only)
+<img src="Images/Techstack.gif#gh-dark-mode-only" alt="Techstack GIF" width="550" align="left" />
+<img src="Images/TechstackWhite.gif#gh-light-mode-only" alt="Techstack GIF" width="550" align="left" />
 <br />
 
 <h3 align="left">📚 Current Learning</h3>
